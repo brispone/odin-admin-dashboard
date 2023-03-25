@@ -15,16 +15,36 @@ html, body {
 .sidebar {
     background-color: blue;
     grid-row: span 2;
+    display: grid;
+    grid-template-columns: 1;
+    justify-items: left;
+    align-content: start;
 }
 
+.sidebar > * {
+    border: 1px solid red;
+}
 .sidebar ul {
     list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    text-align: left;
 }
 
 .header {
     grid-column: 2;
     background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+.header > * {
+    border: 1px solid red;
+}
+
 
 .main-content {
     grid-column: 2;
