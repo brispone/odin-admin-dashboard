@@ -7,7 +7,6 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
-    gap: 4px;
     height: 100vh;
     width: 100vw;
 }
@@ -49,4 +48,30 @@ html, body {
 .main-content {
     grid-column: 2;
     background-color: lightslategray;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-content > * {
+    border: 1px solid red;
+}
+
+.projects-container {
+    grid-row: span 2;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    overflow: auto;
+    justify-content: center;
+    padding: 20px;
+}
+
+.projects-container .card {
+    background-color: white;
+    height: 200px;
+}
+
+.projects-container .title {
+    font-weight: bold;
 }
