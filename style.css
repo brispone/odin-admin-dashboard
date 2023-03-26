@@ -4,6 +4,7 @@
     --sidebar-color: #41b3a3;
     --background-color: #e6f7ff;
     --trim-color: #c38d9e;
+    --link-hover-color: #feeecc;
 }
 
 * {
@@ -62,6 +63,12 @@ html, body {
     font-weight: bold;
     font-size: 1.2em;
     margin-left: 10px;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: var(--link-hover-color);
+    transition: 0.3s;
 }
 
 .nav-item a {
@@ -159,6 +166,12 @@ html, body {
     width: 100px;
     cursor: pointer;
     grid-row: 1;
+    transition: 0.3s;
+}
+
+.button-container button:hover {
+    color: var(--link-hover-color);
+    transition: 0.1s;
 }
 
 .user-info {
