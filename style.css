@@ -24,6 +24,7 @@ html, body {
     grid-template-columns: 1;
     justify-items: left;
     align-content: start;
+    color: white;
 }
 
 .sidebar ul {
@@ -33,6 +34,18 @@ html, body {
 
 .sidebar li {
     text-align: left;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.nav-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
 }
 
 .header {
