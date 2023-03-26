@@ -232,6 +232,24 @@ html, body {
     color: black;
 }
 
+.projects-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-icons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    gap: 20px;
+}
+
+.card-icons img {
+    height: 20px;
+    width: 20px;
+}
+
 .projects-container .title {
     font-weight: bold;
 }
