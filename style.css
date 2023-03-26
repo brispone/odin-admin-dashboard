@@ -219,7 +219,7 @@ html, body {
 
 .projects-container .card {
     background-color: white;
-    border-left: 10px solid var(--trim-color);
+    border-left: 15px solid var(--trim-color);
     height: 200px;
     padding: 20px;
     border-radius: 10px;
@@ -227,6 +227,12 @@ html, body {
     box-shadow: 1px 1px 5px gray;
     margin: 5px;
     max-width: 400px;
+    transition: 0.1s;
+}
+
+.projects-container .card:hover {
+    border: 1px solid var(--trim-color);
+    transition: 0.3s;
 }
 
 .projects-container .card p.title {
