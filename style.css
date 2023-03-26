@@ -96,7 +96,7 @@ html, body {
 
 .search-bar input {
     background-color: var(--background-color);
-    border-radius: 50px;
+    border-radius: 10px;
     height: 30px;
     width: 100%;
     border: none;
@@ -106,6 +106,7 @@ html, body {
     color: darkslategray;
     font-weight: bold;
     font-size: 15px;
+    line-height: 30px;
 }
 
 .search-bar input:focus {
@@ -136,12 +137,35 @@ html, body {
     color: darkslategray;
 }
 
+.button-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+
+.button-container button {
+    background-color: var(--sidebar-color);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    grid-row: 1;
+}
+
 .main-content {
     grid-column: 2;
     background-color: var(--background-color);
     display: grid;
     grid-template-columns: 2.2fr 0.8fr;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 1px 1px 5px gray;
 }
 
 .projects-container, .announcements-container, .trending-container {
