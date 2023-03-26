@@ -38,6 +38,7 @@ html, body {
     align-items: center;
     margin-left: 10px;
     margin-top: 10px;
+    margin-right: 20px;
 }
 
 .branding img {
@@ -140,10 +141,11 @@ html, body {
 .button-container {
     display: grid;
     grid-template-rows: 1fr;
-    justify-content: start;
+    justify-content: end;
     align-items: center;
     gap: 30px;
     height: 100%;
+    margin-right: 30px;
 }
 
 .button-container button {
@@ -157,6 +159,32 @@ html, body {
     width: 100px;
     cursor: pointer;
     grid-row: 1;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.user-info > * {
+    margin-right: 40px;
+}
+
+.user-info div {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    height: 30px;
+    width: 30px;
+}
+
+.user-info .profile-pic {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
 }
 
 .main-content {
