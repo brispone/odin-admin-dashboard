@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-:root {
+ :root {
     --sidebar-color: #41b3a3;
     --background-color: #e6f7ff;
     --trim-color: #c38d9e;
@@ -191,7 +191,7 @@ html, body {
     grid-column: 2;
     background-color: var(--background-color);
     display: grid;
-    grid-template-columns: 2.2fr 0.8fr;
+    grid-template-columns: 2.2fr minmax(350px, 0.8fr);
     grid-template-rows: 1fr 1fr;
     box-shadow: 1px 1px 5px gray;
 }
@@ -207,7 +207,7 @@ html, body {
 .card-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     overflow: auto;
     align-items: start;
     padding-top: 20px;
@@ -221,7 +221,7 @@ html, body {
     background-color: white;
     border-left: 10px solid var(--trim-color);
     height: 200px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     color: darkslategray;
     box-shadow: 1px 1px 5px gray;
