@@ -10,33 +10,38 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="branding"><img src="./icons/view-dashboard.svg"/>Dashboard</div>
+            <div class="branding"><img src="./icons/view-dashboard.svg"/><h2>Dashboard</h2></div>
             <ul class="navigation">
-                <li class="nav-item"><img src="./icons/home.svg"/>Home</li>
-                <li class="nav-item"><img src="./icons/card-account-details-outline.svg".>Profile</li>
-                <li class="nav-item"><img src="./icons/message-reply.svg">Messages</li>
-                <li class="nav-item"><img src="./icons/history.svg">History</li>
-                <li class="nav-item"><img src="./icons/format-list-checks.svg">Tasks</li>
-                <li class="nav-item"><img src="./icons/account-group.svg">Communities</li>
+                <li class="nav-item"><a href=""><img src="./icons/home.svg"/>Home</a></li>
+                <li class="nav-item"><a href=""><img src="./icons/card-account-details-outline.svg".>Profile</a></li>
+                <li class="nav-item"><a href=""><img src="./icons/message-reply.svg">Messages</a></li>
+                <li class="nav-item"><a href=""><img src="./icons/history.svg">History</a></li>
+                <li class="nav-item"><a href=""><img src="./icons/format-list-checks.svg">Tasks</a></li>
+                <li class="nav-item"><a href=""><img src="./icons/account-group.svg">Communities</a></li>
             </ul>
             <ul class="settings">
-                <li class="nav-item"><img src="./icons/cog.svg">Settings</li>
-                <li class="nav-item"><img src="./icons/face-agent.svg">Support</li>
-                <li class="nav-item"><img src="./icons/shield-check.svg">Privacy</li>
+                <li class="nav-item"><a href=""><img src="./icons/cog.svg">Settings</a></li>
+                <li class="nav-item"><a href=""><img src="./icons/face-agent.svg">Support</a></li>
+                <li class="nav-item"><a href=""><img src="./icons/shield-check.svg">Privacy</a></li>
             </ul>
         </div>
 
         <div class="header">
             <div class="search-container">
-                <input type="text" class="search-bar" placeholder="Search...">
+                <div class="search-bar">
+                    <img src="./icons/magnify.svg"/>
+                    <input type="text">
+                </div>
             </div>
             <div class="user-info">
                 <h2>Morgan Oakley</h2>
             </div>
             <div class="user-greeting">
                 <img class="profile-pic" src="./images/profile1.jpg""/>
-                <h3>Hi there,</h3>
-                <h1>Morgan Oakley (@morgan)</h1>
+                <div>
+                    <h3>good morning,</h3>
+                    <h1>Morgan <span class="username">@morgan</span></h1>
+                </div>
             </div>
             <div class="button-container">
                 <button>New</button>
@@ -110,22 +115,22 @@
                         <li>
                             <img class="profile-pic" src="./images/profile2.jpg" />
                             <span>@tegan</span>
-                            <span>World Peace Builder</span>
+                            <span class="title">World Peace Builder</span>
                         </li>
                         <li>
                             <img class="profile-pic" src="./images/profile1.jpg" />
                             <span>@morgan</span>
-                            <span>Super Cool Project</span>
+                            <span class="title">Super Cool Project</span>
                         </li>
                         <li>
                             <img class="profile-pic" src="./images/profile3.jpg" />
                             <span>@kendall</span>
-                            <span>Life Changing App</span>
+                            <span class="title">Life Changing App</span>
                         </li>
                         <li>
                             <img class="profile-pic" src="./images/profile4.jpg" />
                             <span>@alex</span>
-                            <span>No Traffic Maker</span>
+                            <span class="title">No Traffic Maker</span>
                         </li>
                     </ul>
                 </div>
