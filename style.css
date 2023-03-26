@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -15,7 +18,7 @@ html, body {
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: #41b3a3;
     grid-row: span 2;
     display: grid;
     grid-template-columns: 1;
@@ -23,9 +26,6 @@ html, body {
     align-content: start;
 }
 
-.sidebar > * {
-    border: 1px solid red;
-}
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -41,23 +41,15 @@ html, body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 0 4px 10px -2px gray;
 }
-
-.header > * {
-    border: 1px solid red;
-}
-
 
 .main-content {
     grid-column: 2;
-    background-color: lightslategray;
+    background-color: #b3e6ff;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-}
-
-.main-content > * {
-    border: 1px solid red;
 }
 
 .projects-container, .announcements-container, .trending-container {
@@ -83,6 +75,7 @@ html, body {
 
 .projects-container .card {
     background-color: white;
+    border-left: 10px solid #c38d9e;
     height: 200px;
 }
 
