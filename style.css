@@ -226,6 +226,7 @@ html, body {
     color: darkslategray;
     box-shadow: 1px 1px 5px gray;
     margin: 5px;
+    max-width: 400px;
 }
 
 .projects-container .card p.title {
